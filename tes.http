@@ -1,0 +1,154 @@
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name":"hakim",
+    "email":"hakim@gmail.com",
+    "password":"hakim31",
+    "role":"doctor"
+}
+
+###
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email":"hakim31@gmail.com",
+    "password":"hakim31"
+}
+
+
+//users
+
+###
+GET  http://localhost:5000/api/v1/users/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2ZWU3NTBlM2FiZDc4Y2Q3Y2JjNiIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwMTUxOTI5LCJleHAiOjE3MjAxNTU1Mjl9.Z4Opz23nTrJbu6MOzdiJ9PPpBwUTPwrSPd4ygjv84Fk
+
+{
+   
+}
+
+###
+DELETE http://localhost:5000/api/v1/users/66876ee750e3abd78cd7cbc6
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2ZWU3NTBlM2FiZDc4Y2Q3Y2JjNiIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwMTUxOTI5LCJleHAiOjE3MjAxNTU1Mjl9.Z4Opz23nTrJbu6MOzdiJ9PPpBwUTPwrSPd4ygjv84Fk
+
+{
+   
+}
+
+
+###
+GET  http://localhost:5000/api/v1/users/66876ee750e3abd78cd7cbc6    
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGFlNDgxMjgyMWQzNzI5ODczMzMzMSIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwMzc4ODAyLCJleHAiOjE3MjA0NjUyMDJ9.pDxIoMYmbaWk2sJTYxi5axzRCyAKM6YAwUY61dgsmY0"
+
+{
+   
+}
+
+###
+PATCH http://localhost:5000/api/v1/users/668ae4812821d37298733331
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGFlNDgxMjgyMWQzNzI5ODczMzMzMSIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwMzc4ODU0LCJleHAiOjE3MjA0NjUyNTR9.qokNO_5jms_-Dx45lJyYzCiX8jQWbhO6RlaxN7vWZqE
+
+{
+   "role":"patient"
+}
+
+//doctor
+###
+GET  http://localhost:5000/api/v1/doctors/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZiMjFhMjUzY2FjODMxMjk2MzE0NCIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3MjAxNTE4NTgsImV4cCI6MTcyMDE1NTQ1OH0.J2fl1VTWs3dAAn6t0taWu5H72754yj4I4hoG3nrTa2M
+
+{
+   
+}
+
+###
+DELETE http://localhost:5000/api/v1/doctors/6686b21a253cac8312963144
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZiMjFhMjUzY2FjODMxMjk2MzE0NCIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3MjAxNTE4NTgsImV4cCI6MTcyMDE1NTQ1OH0.J2fl1VTWs3dAAn6t0taWu5H72754yj4I4hoG3nrTa2M
+
+{
+   
+}
+
+
+###
+GET  http://localhost:5000/api/v1/doctors/668795209fa78b9b47ad01d6
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZiMjFhMjUzY2FjODMxMjk2MzE0NCIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3MjAxNTE4NTgsImV4cCI6MTcyMDE1NTQ1OH0.J2fl1VTWs3dAAn6t0taWu5H72754yj4I4hoG3nrTa2M
+
+{
+   
+}
+
+###
+PUT   http://localhost:5000/api/v1/doctors/668691ed1943fd8f364ee987
+Content-Type: application/json
+Accept: application/json
+
+{
+   "role":"patient"
+}
+
+###
+////review
+
+POST http://localhost:5000/api/v1/doctors/668a8a8879a3fb2460455b44/reviews
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGFiNzgyMjgyMWQzNzI5ODczMzE2OCIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwMzY4MTc1LCJleHAiOjE3MjA0NTQ1NzV9.sq3K2FVKVvYBqkcuw50a7FUz54eNy-s0tID6Qlp14-8
+
+{
+   "reviewText":"Good Doctors",
+   "rating":5
+}
+###
+GET  http://localhost:5000/api/v1/doctors/668795209fa78b9b47ad01d6/reviews
+Content-Type: application/json
+Accept: application/json
+
+{
+ 
+}
+###
+GET  http://localhost:5000/api/v1/doctors/profile/me
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODkzMGY4OWE3ZDJlY2E0YWE1NTBhNSIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3MjAyNzczMjcsImV4cCI6MTcyMDMyMDUyN30.gR-eRApwphDr0Om-DSo1wAEI8Uyj5QqI15E14kwiK3s
+
+{
+ 
+}
+
+###
+POST  http://localhost:5000/api/v1/bookings/checkout-session/668a8a8879a3fb2460455b44
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGFlODc1YmJkZGI2OWQyMjY3OTFjYyIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwNDE3NDk5LCJleHAiOjE3MjA1MDM4OTl9.J7zZa2ObGPiq4DrjJBcVd9CeI-4iSQ7I94aNlN57zzQ
+
+{
+ 
+}
+###
+GET  http://localhost:5000/api/v1/users/appointments/my-appointments
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGFlODc1YmJkZGI2OWQyMjY3OTFjYyIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzIwNDE3NDk5LCJleHAiOjE3MjA1MDM4OTl9.J7zZa2ObGPiq4DrjJBcVd9CeI-4iSQ7I94aNlN57zzQ
+
+{
+ 
+}
